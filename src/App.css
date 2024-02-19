@@ -1,0 +1,234 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.Navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Subnavbar {
+  width: 100%;
+  height: 10vh;
+  background-color: lightgrey;
+  display: flex;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 20px 20px 0px 0px; */
+
+}
+
+.Subnavbar h1 {
+  color: black;
+  padding: 0px 60px;
+  font-size: 20px;
+}
+
+/* .Searchbar {
+  background-color: green;
+  align-items: center;
+  justify-content: center;
+
+} */
+
+.Searchbar-container {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  /* border-radius: 1px;
+  border: 2px solid black; */
+  text-align: center;
+  
+}
+
+.Searchbutton {
+  width: 120px;
+  height: 45px;
+  /* border-radius: 10px; */
+  background-color: black;
+  color: white;
+  margin: 10px;
+  margin-top: 80px;
+
+}
+
+.Shoppingheader {
+  text-align: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  transition: all 0.3s ease;
+  margin: 40px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0;
+  background-color: white;
+}
+
+.card-description {
+  display: flex;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+   align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 300px;
+}
+
+.buybutton {
+  width: 240px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  margin: 20px;
+}
+
+.menubutton {
+  position: absolute;
+display: flex;  
+/* position: absolute; */
+background-color: yellow;
+}
+
+.Sidemenu {
+  position: absolute;
+  /* width: 20%; */
+  height: 800px;
+  background-color: violet;
+  display: flex;
+  /* align-items: center; */
+  color: red;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* .Sidemenu li {
+  background-color: orange;
+  color: black;
+  width: 100%;
+  margin: 10px;
+} */
+
+.Products-container {
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 20px;
+}
+
+.Footer {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.Loginform {
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  width: 40%;
+  margin-left: 200px;
+}
+
+.Loginemail {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Loginpassword {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
