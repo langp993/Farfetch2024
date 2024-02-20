@@ -67,40 +67,40 @@ function Home() {
       {/* <div className="Products-container">SHOP PRODUCTS</div>; */}
       {/* <Products /> */}
       {/* <Search setSearch={setSearch} /> */}
-      <div className="Searchbar-container">
-        <form className="Searchbar">
+      <div className="flex justify-center bg-yellow-500 p-4">
+        <form className="bg-blue-500 p-2">
           <input
             onChange={(e) => {
               handleSearch(e);
             }}
-            className="input"
+            className="text-center w-60 h-10 mx-8"
             placeholder="Search Category"
             type="text"
           ></input>
-          <button className="Searchbutton">Search</button>
+          <button className="bg-green-800  w-60 h-12 text-white rounded-lg shadow-md mx-8">
+            Search
+          </button>
         </form>
       </div>
       {/* {isLoading && <h1>....LOADING.....</h1>} */}
 
-      <div>
+      <div className="p-4 grid grid-cols-1 xl:grid-cols-4 gap-4 bg-red-500">
         {filteredData.map((fetchData) => (
-          <div key={fetchData.id} className="card">
-            <img src={fetchData.image} alt="" />
-            <div className="card-description">
-              <h1>{fetchData.category}</h1>
-              <h3>{fetchData.title}</h3>
-              {/* <h6>{fetchData.description}</h6> */}
-              <h4>{fetchData.price} Euro, inkl. MwSt, zzgl. Versand</h4>
-              {/* <h6>inkl. MwSt, zzgl. Versand</h6> */}
-              <button className="buybutton">Buy</button>
-
-              {/* <ul>
-                {fetchedData.map((fetchData) => (
-                  <li key={fetchData.id}>{fetchData.category}</li>
-                ))}
-              </ul> */}
+          <Link to="/about">
+            <div key={fetchData.id} className="card">
+              <img src={fetchData.image} alt="" />
+              <div className="card-description">
+                <h1>{fetchData.category}</h1>
+                <h3>{fetchData.title}</h3>
+                {/* <h6>{fetchData.description}</h6> */}
+                <h4>{fetchData.price} Euro, inkl. MwSt, zzgl. Versand</h4>
+                {/* <h6>inkl. MwSt, zzgl. Versand</h6> */}
+                <button className="bg-black  w-60 h-14 text-white rounded-lg shadow-md m-8">
+                  Buy
+                </button>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <Footer />

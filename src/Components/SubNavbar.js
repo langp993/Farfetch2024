@@ -6,20 +6,24 @@ const SubNavbar = () => {
   return (
     <div className="Subnavbar">
       {/* <button className="menubutton">Menu</button> */}
-      <h1 className="text-sky-500">Menu</h1>
-      <h1 className="px-4">Checkout</h1>
+      <h1 className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8">
+        Menu
+      </h1>
+      <h1 className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8">
+        Checkout
+      </h1>
       {/* <h1 className="">Login</h1> */}
 
       <Link
         to="/about"
-        className="flex items-center justify-between p-4 bg-white rounded-lg shadow-md mt-04"
+        className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8"
       >
         <h1 className="">Contact</h1>
       </Link>
 
       <Link
         to="/login"
-        className="flex items-center justify-between p-4 bg-white rounded-lg shadow-md mt-04"
+        className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8"
       >
         <h1 className="">Login</h1>
       </Link>
