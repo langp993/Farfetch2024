@@ -69,12 +69,16 @@ const Login = () => {
     <main>
       <section>
         <div>
-          <div className="Loginform">
-            <h1> Login to your Account! </h1>
+          <div className="bg-green-500 flex grid grid-cols-1 items-center justify-center w-80 m-auto mt-40">
+            <h1 className="m-auto font-bold text-2xl">
+              {" "}
+              LOGIN TO YOUR ACCOUNT{" "}
+            </h1>
             <form>
-              <div className="Loginemail">
+              <div className="my-8 grid grid-cols-1">
                 <label htmlFor="email-address">Email address</label>
                 <input
+                  className="mx-8"
                   type="email"
                   label="Email address"
                   value={email}
@@ -84,7 +88,7 @@ const Login = () => {
                 />
               </div>
 
-              <div className="Loginpassword">
+              <div className="my-8 grid grid-cols-1">
                 <label htmlFor="password">Password</label>
                 <input
                   type="password"
@@ -96,13 +100,17 @@ const Login = () => {
                 />
               </div>
 
-              <button type="submit" onClick={onSubmit}>
+              <button
+                type="submit"
+                onClick={onSubmit}
+                className="my-8 bg-yellow-500 p-4 w-80 rounded-lg"
+              >
                 {/* Sign up */}
                 Login
               </button>
             </form>
 
-            <p>
+            <p className="m-auto text-blue-500">
               Don't have an account? <NavLink to="/">Sign Up</NavLink>
             </p>
 

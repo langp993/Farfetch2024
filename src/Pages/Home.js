@@ -73,13 +73,13 @@ function Home() {
             onChange={(e) => {
               handleSearch(e);
             }}
-            className="text-center w-60 h-10 mx-8"
+            className="text-center w-60 h-10 mx-8 w-80 rounded-md"
             placeholder="Search Category"
             type="text"
           ></input>
-          <button className="bg-green-800  w-60 h-12 text-white rounded-lg shadow-md mx-8">
+          {/* <button className="bg-green-800  w-60 h-12 text-white rounded-lg shadow-md mx-8">
             Search
-          </button>
+          </button> */}
         </form>
       </div>
       {/* {isLoading && <h1>....LOADING.....</h1>} */}
@@ -90,11 +90,18 @@ function Home() {
             <div key={fetchData.id} className="card">
               <img src={fetchData.image} alt="" />
               <div className="card-description">
-                <h1>{fetchData.category}</h1>
+                <h1 className="text-3xl font-bold uppercase mb-4">
+                  {fetchData.category}
+                </h1>
                 <h3>{fetchData.title}</h3>
                 {/* <h6>{fetchData.description}</h6> */}
-                <h4>{fetchData.price} Euro, inkl. MwSt, zzgl. Versand</h4>
+                <h4 className="font-bold my-4">
+                  {fetchData.price} Euro, inkl. MwSt, zzgl. Versand
+                </h4>
                 {/* <h6>inkl. MwSt, zzgl. Versand</h6> */}
+              </div>
+
+              <div className="bg-green-500">
                 <button className="bg-black  w-60 h-14 text-white rounded-lg shadow-md m-8">
                   Buy
                 </button>

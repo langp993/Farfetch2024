@@ -33,8 +33,11 @@ function About() {
     <div className="page">
       {/* <Sidemenu /> */}
       <Navbar />
-      About Page is working WOOP
-      <button className="menubutton" onClick={() => navigate("/")}>
+
+      <button
+        className="bg-green-500 w-60 h-12 text-white rounded-lg shadow-md flex items-center justify-center m-auto my-20  "
+        onClick={() => navigate("/")}
+      >
         Home
       </button>
       <Footer />
