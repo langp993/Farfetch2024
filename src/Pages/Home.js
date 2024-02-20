@@ -84,7 +84,7 @@ function Home() {
       </div>
       {/* {isLoading && <h1>....LOADING.....</h1>} */}
 
-      <div className="p-4 grid grid-cols-1 xl:grid-cols-4 gap-4 bg-red-500">
+      <div className="p-4 grid grid-cols-1 xl:grid-cols-4 gap-4 bg-pink-500">
         {filteredData.map((fetchData) => (
           <Link to="/about">
             <div key={fetchData.id} className="card">
