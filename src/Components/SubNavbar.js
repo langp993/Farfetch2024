@@ -5,15 +5,18 @@ import { Link, useNavigate } from "react-router-dom";
 const SubNavbar = () => {
   return (
     <div className="Subnavbar">
-      {/* <button className="menubutton">Menu</button> */}
-      <h1 className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8">
-        Menu
-      </h1>
-      <h1 className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8">
-        Checkout
-      </h1>
-      {/* <h1 className="">Login</h1> */}
-
+      <Link
+        to="/about"
+        className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8"
+      >
+        <h1>Menu</h1>
+      </Link>
+      <Link
+        to="/about"
+        className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8"
+      >
+        <h1>Checkout</h1>
+      </Link>
       <Link
         to="/about"
         className="flex items-center justify-between p-2 bg-white rounded-lg shadow-md m-8"
